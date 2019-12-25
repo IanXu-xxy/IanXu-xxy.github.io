@@ -1,0 +1,530 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>Project Summary | Ian Xu's Blog</title><meta name="description" content="Project Summary"><meta name="keywords" content=""><meta name="author" content="Ian Xu"><meta name="copyright" content="Ian Xu"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Project Summary"><meta name="twitter:description" content="Project Summary"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><meta property="og:type" content="article"><meta property="og:title" content="Project Summary"><meta property="og:url" content="http://yoursite.com/2019/12/17/Project-Summary/"><meta property="og:site_name" content="Ian Xu's Blog"><meta property="og:description" content="Project Summary"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://yoursite.com/2019/12/17/Project-Summary/"><link rel="prev" title="Coding Demonstration" href="http://yoursite.com/2019/12/17/Coding-Demonstration/"><link rel="next" title="About Me" href="http://yoursite.com/2019/12/17/About-Me/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'false',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: undefined
+  
+}</script><meta name="generator" content="Hexo 4.1.1"></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Ian Xu's Blog</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div></div></span><span class="pull_right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="/img/xxy-avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">3</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">Catalog</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-1"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">1-1</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-2"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">1-2</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-3"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">1-3</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-4"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">1-4</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-5"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text">1-5</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-6"><span class="toc_mobile_items-number">6.</span> <span class="toc_mobile_items-text">1-6</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-7"><span class="toc_mobile_items-number">7.</span> <span class="toc_mobile_items-text">1-7</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-8"><span class="toc_mobile_items-number">8.</span> <span class="toc_mobile_items-text">1-8</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-9"><span class="toc_mobile_items-number">9.</span> <span class="toc_mobile_items-text">1-9</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-10"><span class="toc_mobile_items-number">10.</span> <span class="toc_mobile_items-text">1-10</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-11"><span class="toc_mobile_items-number">11.</span> <span class="toc_mobile_items-text">1-11</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-12"><span class="toc_mobile_items-number">12.</span> <span class="toc_mobile_items-text">1-12</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-13"><span class="toc_mobile_items-number">13.</span> <span class="toc_mobile_items-text">1-13</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-14"><span class="toc_mobile_items-number">14.</span> <span class="toc_mobile_items-text">1-14</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-1"><span class="toc_mobile_items-number">15.</span> <span class="toc_mobile_items-text">2-1</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-2"><span class="toc_mobile_items-number">16.</span> <span class="toc_mobile_items-text">2-2</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-3"><span class="toc_mobile_items-number">17.</span> <span class="toc_mobile_items-text">2-3</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-4"><span class="toc_mobile_items-number">18.</span> <span class="toc_mobile_items-text">2-4</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-5"><span class="toc_mobile_items-number">19.</span> <span class="toc_mobile_items-text">2-5</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-6"><span class="toc_mobile_items-number">20.</span> <span class="toc_mobile_items-text">2-6</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-7"><span class="toc_mobile_items-number">21.</span> <span class="toc_mobile_items-text">2-7</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-8"><span class="toc_mobile_items-number">22.</span> <span class="toc_mobile_items-text">2-8</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-9"><span class="toc_mobile_items-number">23.</span> <span class="toc_mobile_items-text">2-9</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-1"><span class="toc_mobile_items-number">24.</span> <span class="toc_mobile_items-text">3-1</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-2"><span class="toc_mobile_items-number">25.</span> <span class="toc_mobile_items-text">3-2</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-3"><span class="toc_mobile_items-number">26.</span> <span class="toc_mobile_items-text">3-3</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-4"><span class="toc_mobile_items-number">27.</span> <span class="toc_mobile_items-text">3-4</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-5"><span class="toc_mobile_items-number">28.</span> <span class="toc_mobile_items-text">3-5</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-6"><span class="toc_mobile_items-number">29.</span> <span class="toc_mobile_items-text">3-6</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-7"><span class="toc_mobile_items-number">30.</span> <span class="toc_mobile_items-text">3-7</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-8"><span class="toc_mobile_items-number">31.</span> <span class="toc_mobile_items-text">3-8</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-9"><span class="toc_mobile_items-number">32.</span> <span class="toc_mobile_items-text">3-9</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-10"><span class="toc_mobile_items-number">33.</span> <span class="toc_mobile_items-text">3-10</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-11"><span class="toc_mobile_items-number">34.</span> <span class="toc_mobile_items-text">3-11</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#3-12"><span class="toc_mobile_items-number">35.</span> <span class="toc_mobile_items-text">3-12</span></a></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1"><span class="toc-number">1.</span> <span class="toc-text">1-1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2"><span class="toc-number">2.</span> <span class="toc-text">1-2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3"><span class="toc-number">3.</span> <span class="toc-text">1-3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4"><span class="toc-number">4.</span> <span class="toc-text">1-4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5"><span class="toc-number">5.</span> <span class="toc-text">1-5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-6"><span class="toc-number">6.</span> <span class="toc-text">1-6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-7"><span class="toc-number">7.</span> <span class="toc-text">1-7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-8"><span class="toc-number">8.</span> <span class="toc-text">1-8</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-9"><span class="toc-number">9.</span> <span class="toc-text">1-9</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-10"><span class="toc-number">10.</span> <span class="toc-text">1-10</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-11"><span class="toc-number">11.</span> <span class="toc-text">1-11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-12"><span class="toc-number">12.</span> <span class="toc-text">1-12</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-13"><span class="toc-number">13.</span> <span class="toc-text">1-13</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-14"><span class="toc-number">14.</span> <span class="toc-text">1-14</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1"><span class="toc-number">15.</span> <span class="toc-text">2-1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2"><span class="toc-number">16.</span> <span class="toc-text">2-2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3"><span class="toc-number">17.</span> <span class="toc-text">2-3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4"><span class="toc-number">18.</span> <span class="toc-text">2-4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5"><span class="toc-number">19.</span> <span class="toc-text">2-5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6"><span class="toc-number">20.</span> <span class="toc-text">2-6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-7"><span class="toc-number">21.</span> <span class="toc-text">2-7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-8"><span class="toc-number">22.</span> <span class="toc-text">2-8</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-9"><span class="toc-number">23.</span> <span class="toc-text">2-9</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1"><span class="toc-number">24.</span> <span class="toc-text">3-1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2"><span class="toc-number">25.</span> <span class="toc-text">3-2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3"><span class="toc-number">26.</span> <span class="toc-text">3-3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4"><span class="toc-number">27.</span> <span class="toc-text">3-4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5"><span class="toc-number">28.</span> <span class="toc-text">3-5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6"><span class="toc-number">29.</span> <span class="toc-text">3-6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7"><span class="toc-number">30.</span> <span class="toc-text">3-7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8"><span class="toc-number">31.</span> <span class="toc-text">3-8</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-9"><span class="toc-number">32.</span> <span class="toc-text">3-9</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-10"><span class="toc-number">33.</span> <span class="toc-text">3-10</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-11"><span class="toc-number">34.</span> <span class="toc-text">3-11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-12"><span class="toc-number">35.</span> <span class="toc-text">3-12</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png)"><div id="post-info"><div id="post-title"><div class="posttitle">Project Summary</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> Created 2019-12-17<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> Updated 2019-12-18</time><div class="post-meta-wordcount"><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>Post View: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h2 id="1-1"><a href="#1-1" class="headerlink" title="1-1"></a>1-1</h2><p>In this project, we will walk through the full data science life cycle, from data cleaning and feature selection to machine learning. We will focus on credit modeling, a well-known data science problem that focuses on modeling a borrower’s credit risk. Credit has played a key role in the economy for centuries and some form of credit has existed since the beginning of commerce. We’ll be working with financial lending data from Lending Club. Lending Club is a marketplace for personal loans that matches borrowers who are seeking a loan with investors looking to lend money and make a return.<br>Each borrower fills out a comprehensive application, providing their past financial history, the reason for the loan, and more. Lending Club evaluates each borrower’s credit score using past historical data (and their own data science process!) and assign an interest rate to the borrower. The interest rate is the percent in addition to the requested loan amount the borrower has to pay back. Lending Club also tries to verify each piece of information the borrower provides but it can’t always verify all of the information (usually for regulation reasons).<br>A higher interest rate means that the borrower is riskier and more unlikely to pay back the loan while a lower interest rate means that the borrower has a good credit history is more likely to pay back the loan. The interest rates range from 5.32% all the way to 30.99% and each borrower is given a grade according to the interest rate they were assigned. If the borrower accepts the interest rate, then the loan is listed on the Lending Club marketplace.<br>Investors are primarily interested in receiving a return on their investments. Approved loans are listed on the Lending Club website, where qualified investors can browse recently approved loans, the borrower’s credit score, the purpose for the loan, and other information from the application. Once they’re ready to back a loan, they select the amount of money they want to fund. Once a loan’s requested amount is fully funded, the borrower receives the money they requested minus the origination fee that Lending Club charges.<br>The borrower then makes monthly payments back to Lending Club either over 36 months or over 60 months. Lending Club redistributes these payments to the investors. This means that investors don’t have to wait until the full amount is paid off to start to see money back. If a loan is fully paid off on time, the investors make a return, which corresponds to the interest rate the borrower had to pay in addition the requested amount. Many loans aren’t completely paid off on time, however, and some borrowers default on the loan.<br>While Lending Club has to be extremely savvy and rigorous with their credit modeling, investors on Lending Club need to be equally as savvy about determining which loans are more likely to be paid off. While at first, people may wonder why investors would put money into anything but low interest loans. The incentive investors have to back higher interest loans is the higher interest! If investors believe the borrower can pay back the loan, even if he or she has a weak financial history, then investors can make more money through the larger additional amount the borrower has to pay.<br>Most investors use a portfolio strategy to invest small amounts in many loans, with healthy mixes of low, medium, and interest loans. We’ll focus on the mindset of a conservative investor who only wants to invest in the loans that have a good chance of being paid off on time. To do that, we’ll need to first understand the features in the dataset and then experiment with building machine learning models that reliably predict if a loan will be paid off or not.</p>
+<h2 id="1-2"><a href="#1-2" class="headerlink" title="1-2"></a>1-2</h2><p>Lending Club releases data for all of the approved and declined loan applications periodically on their website. We can select a few different year ranges to download the datasets (in CSV format) for both approved and declined loans.<br>We’ll also find a data dictionary (in XLS format), which contains information on the different column names towards the bottom of the page. I recommend downloading the data dictionary to so we can refer to it whenever we want to learn more about what a column represents in the datasets. Here’s a link to the data dictionary file hosted on Google Drive.<br>Before diving into the datasets themselves, let’s get familiar with the data dictionary. The LoanStats sheet describes the approved loans datasets and the RejectStats describes the rejected loans datasets. Since rejected applications don’t appear on the Lending Club marketplace and aren’t available for investment, we’ll be focusing on data on approved loans only.<br>The approved loans datasets contain information on current loans, completed loans, and defaulted loans. Let’s now define the problem statement for this machine-learning project:<br>Can we build a machine learning model that can accurately predict if a borrower will pay off their loan on time or not?<br>Before we can start doing machine learning, we need to define what features we want to use and which column represents the target column we want to predict. Let’s start by reading in the dataset and exploring it.</p>
+<h2 id="1-3"><a href="#1-3" class="headerlink" title="1-3"></a>1-3</h2><p>In this mission, we’ll focus on approved loans data from 2007 to 2011, since a good number of the loans have already finished. In the datasets for later years, many of the loans are current and still being paid off.<br>We have reduced the size of the dataset to make it easier to work with, by:<br>removing the desc column which contains a long text explanation for each loan<br>removing the url column which contains a link to each loan on Lending Club which can only be accessed with an investor account<br>removing all columns containing more than 50% missing values which allows us to move faster since we can spend less time trying to fill these values<br>First things first, let’s read in the dataset into a Dataframe so we can start to explore the data and explore the remaining features.</p>
+<h2 id="1-4"><a href="#1-4" class="headerlink" title="1-4"></a>1-4</h2><p>The Dataframe contains many columns and can be cumbersome to try to explore all at once. Let’s break up the columns into 3 groups of 18 columns and use the data dictionary to become familiar with what each column represents. To understand each feature, we need to pay attention to any features that:<br>leak information from the future (after the loan has already been funded)<br>don’t affect a borrower’s ability to pay back a loan (e.g. a randomly generated ID value by Lending Club)<br>formatted poorly and need to be cleaned up<br>require more data or a lot of processing to turn into a useful feature<br>contain redundant information<br>We need to especially pay attention to data leakage, since it can cause our model to overfit. This is because the model would be using data about the target column that wouldn’t be available when we’re using the model on future loans.<br>Then let’s focus on just columns that we need to remove from consideration. Then, we can circle back and further dissect the columns we decided to keep.<br>To make this process easier, we created a table that contains the name, data type, first row’s value, and description from the data dictionary for the first 18 rows.</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>dtype</th>
+<th>first value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id</td>
+<td>object</td>
+<td>1077501</td>
+<td>A unique LC assigned ID for the loan listing.</td>
+</tr>
+<tr>
+<td>member_id</td>
+<td>float64</td>
+<td>1.2966e+06</td>
+<td>A unique LC assigned Id for the borrower member.</td>
+</tr>
+<tr>
+<td>loan_amnt</td>
+<td>float64</td>
+<td>5000</td>
+<td>The listed amount of the loan applied for by the borrower.</td>
+</tr>
+<tr>
+<td>funded_amn</td>
+<td>float64</td>
+<td>5000</td>
+<td>The total amount committed to that loan at that point in time.</td>
+</tr>
+<tr>
+<td>funded_amnt_inv</td>
+<td>float64</td>
+<td>49750</td>
+<td>The total amount committed by investors for that loan at that point in time.</td>
+</tr>
+<tr>
+<td>term</td>
+<td>object</td>
+<td>36 months</td>
+<td>The number of payments on the loan. Values are in months and can be either 36 or 60.</td>
+</tr>
+<tr>
+<td>int_rate</td>
+<td>object</td>
+<td>10.65%</td>
+<td>Interest Rate on the loan</td>
+</tr>
+<tr>
+<td>installment</td>
+<td>float64</td>
+<td>162.87</td>
+<td>The monthly payment owed by the borrower if the loan originates.</td>
+</tr>
+<tr>
+<td>grade</td>
+<td>object</td>
+<td>B</td>
+<td>LC assigned loan grade</td>
+</tr>
+<tr>
+<td>sub_grade</td>
+<td>object</td>
+<td>B2</td>
+<td>LC assigned loan subgrade</td>
+</tr>
+<tr>
+<td>emp_title</td>
+<td>object</td>
+<td>NaN</td>
+<td>The job title supplied by the Borrower when applying for the loan.</td>
+</tr>
+<tr>
+<td>emp_length</td>
+<td>object</td>
+<td>10+ years</td>
+<td>Employment length in years. Possible values are between 0 and 10 where 0 means less than one year and 10 means ten or more years.</td>
+</tr>
+<tr>
+<td>home_ownership</td>
+<td>object</td>
+<td>RENT</td>
+<td>The home ownership status provided by the borrower during registration. Our values are: RENT, OWN, MORTGAGE, OTHER.</td>
+</tr>
+<tr>
+<td>annual_inc</td>
+<td>float64</td>
+<td>24000</td>
+<td>The self-reported annual income provided by the borrower during registration.</td>
+</tr>
+<tr>
+<td>verification_status</td>
+<td>object</td>
+<td>Verified</td>
+<td>Indicates if income was verified by LC, not verified, or if the income source was verified</td>
+</tr>
+<tr>
+<td>issue_d</td>
+<td>object</td>
+<td>Dec-2011</td>
+<td>The month which the loan was funded</td>
+</tr>
+<tr>
+<td>loan_status</td>
+<td>object</td>
+<td>Charged Off</td>
+<td>Current status of the loan</td>
+</tr>
+<tr>
+<td>pymnt_plan</td>
+<td>object</td>
+<td>n</td>
+<td>Indicates if a payment plan has been put in place for the loan</td>
+</tr>
+<tr>
+<td>purpose</td>
+<td>object</td>
+<td>car</td>
+<td>A category provided by the borrower for the loan request.</td>
+</tr>
+</tbody></table>
+<p>After analyzing each column, we can conclude that the following features need to be removed:<br>id: randomly generated field by Lending Club for unique identification purposes only<br>member_id: also a randomly generated field by Lending Club for unique identification purposes only<br>funded_amnt: leaks data from the future (after the loan is already started to be funded)<br>funded_amnt_inv: also leaks data from the future (after the loan is already started to be funded)<br>grade: contains redundant information as the interest rate column (int_rate)<br>sub_grade: also contains redundant information as the interest rate column (int_rate)<br>emp_title: requires other data and a lot of processing to potentially be useful<br>issue_d: leaks data from the future (after the loan is already completed funded)</p>
+<p>Recall that Lending Club assigns a grade and a sub-grade based on the borrower’s interest rate. While the grade and sub_grade values are categorical, the int_rate column contains continuous values, which are better suited for machine learning.<br>Let’s now drop these columns from the Dataframe before moving onto the next group of columns.</p>
+<h2 id="1-5"><a href="#1-5" class="headerlink" title="1-5"></a>1-5</h2><p>Use the Dataframe method drop to remove the following columns from the loans_2007 Dataframe:<br>id<br>member_id<br>funded_amnt<br>funded_amnt_inv<br>grade<br>sub_grade<br>emp_title<br>issue_d</p>
+<h2 id="1-6"><a href="#1-6" class="headerlink" title="1-6"></a>1-6</h2><p>Let’s now look at the next 18 columns:</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>dtype</th>
+<th>first value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>object</td>
+<td>Computer</td>
+<td>The loan title provided by the borrower</td>
+</tr>
+<tr>
+<td>zip_code</td>
+<td>object</td>
+<td>860xx</td>
+<td>The first 3 numbers of the zip code provided by the borrower in the loan application.</td>
+</tr>
+<tr>
+<td>addr_state</td>
+<td>object</td>
+<td>AZ</td>
+<td>The state provided by the borrower in the loan application</td>
+</tr>
+<tr>
+<td>dti</td>
+<td>float64</td>
+<td>27.65</td>
+<td>A ratio calculated using the borrower’s total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrower’s self-reported monthly income.</td>
+</tr>
+<tr>
+<td>delinq_2yrs</td>
+<td>float64</td>
+<td>0</td>
+<td>The number of 30+ days past-due incidences of delinquency in the borrower’s credit file for the past 2 years</td>
+</tr>
+<tr>
+<td>earliest_cr_line</td>
+<td>object</td>
+<td>Jan-1985</td>
+<td>The month the borrower’s earliest reported credit line was opened</td>
+</tr>
+<tr>
+<td>inq_last_6mths</td>
+<td>float64</td>
+<td>1</td>
+<td>The number of inquiries in past 6 months (excluding auto and mortgage inquiries)</td>
+</tr>
+<tr>
+<td>open_acc</td>
+<td>float64</td>
+<td>3</td>
+<td>The number of open credit lines in the borrower’s credit file.</td>
+</tr>
+<tr>
+<td>pub_rec</td>
+<td>float64</td>
+<td>0</td>
+<td>Number of derogatory public records</td>
+</tr>
+<tr>
+<td>revol_bal</td>
+<td>float64</td>
+<td>13648</td>
+<td>Total credit revolving balance</td>
+</tr>
+<tr>
+<td>revol_util</td>
+<td>object</td>
+<td>83.7%</td>
+<td>Revolving line utilization rate, or the amount of credit the borrower is using relative to all available revolving credit.</td>
+</tr>
+<tr>
+<td>total_acc</td>
+<td>float64</td>
+<td>9</td>
+<td>The total number of credit lines currently in the borrower’s credit file</td>
+</tr>
+<tr>
+<td>initial_list_status</td>
+<td>object</td>
+<td>f</td>
+<td>The initial listing status of the loan. Possible values are – W, F</td>
+</tr>
+<tr>
+<td>out_prncp</td>
+<td>float64</td>
+<td>0</td>
+<td>Remaining outstanding principal for total amount funded</td>
+</tr>
+<tr>
+<td>out_prncp_inv</td>
+<td>float64</td>
+<td>0</td>
+<td>Remaining outstanding principal for portion of total amount funded by investors</td>
+</tr>
+<tr>
+<td>total_pymnt</td>
+<td>float64</td>
+<td>5863.16</td>
+<td>Payments received to date for total amount funded</td>
+</tr>
+<tr>
+<td>total_pymnt_inv</td>
+<td>float64</td>
+<td>5833.84</td>
+<td>Payments received to date for portion of total amount funded by investors</td>
+</tr>
+<tr>
+<td>total_rec_prncp</td>
+<td>float64</td>
+<td>5000</td>
+<td>Principal received to date</td>
+</tr>
+</tbody></table>
+<p>Within this group of columns, we need to drop the following columns:<br>zip_code: redundant with the addr_state column since only the first 3 digits of the 5 digit zip code are visible (which only can be used to identify the state the borrower lives in)<br>out_prncp: leaks data from the future, (after the loan already started to be paid off)<br>out_prncp_inv: also leaks data from the future, (after the loan already started to be paid off)<br>total_pymnt: also leaks data from the future, (after the loan already started to be paid off)<br>total_pymnt_inv: also leaks data from the future, (after the loan already started to be paid off)<br>total_rec_prncp: also leaks data from the future, (after the loan already started to be paid off)<br>The out_prncp and out_prncp_inv both describe the outstanding principal amount for a loan, which is the remaining amount the borrower still owes. These 2 columns as well as the total_pymnt column describe properties of the loan after it’s fully funded and started to be paid off. This information isn’t available to an investor before the loan is fully funded and we don’t want to include it in our model.<br>Let’s go ahead and remove these columns from the Dataframe.</p>
+<h2 id="1-7"><a href="#1-7" class="headerlink" title="1-7"></a>1-7</h2><p>Use the Dataframe method drop to remove the following columns from the loans_2007 Dataframe:<br>zip_code<br>out_prncp<br>out_prncp_inv<br>total_pymnt<br>total_pymnt_inv<br>total_rec_prncp</p>
+<h2 id="1-8"><a href="#1-8" class="headerlink" title="1-8"></a>1-8</h2><p>Let’s now move on to the last group of features:</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>dtype</th>
+<th>first value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>total_rec_int</td>
+<td>float64</td>
+<td>863.16</td>
+<td>Interest received to date</td>
+</tr>
+<tr>
+<td>total_rec_late_fee</td>
+<td>float64</td>
+<td>0</td>
+<td>Late fees received to date</td>
+</tr>
+<tr>
+<td>recoveries</td>
+<td>float64</td>
+<td>0</td>
+<td>post charge off gross recovery</td>
+</tr>
+<tr>
+<td>collection_recovery_fee</td>
+<td>float64</td>
+<td>0</td>
+<td>post charge off collection fee</td>
+</tr>
+<tr>
+<td>last_pymnt_d</td>
+<td>object</td>
+<td>Jan-15</td>
+<td>Last month payment was received</td>
+</tr>
+<tr>
+<td>last_pymnt_amnt</td>
+<td>float64</td>
+<td>171.62</td>
+<td>Last total payment amount received</td>
+</tr>
+<tr>
+<td>last_credit_pull_d</td>
+<td>object</td>
+<td>Jun-16</td>
+<td>The most recent month LC pulled credit for this loan</td>
+</tr>
+<tr>
+<td>collections_12_mths_ex_med</td>
+<td>float64</td>
+<td>0</td>
+<td>Number of collections in 12 months excluding medical collections</td>
+</tr>
+<tr>
+<td>policy_code</td>
+<td>float64</td>
+<td>1</td>
+<td>publicly available policy_code=1 new products not publicly available policy_code=2</td>
+</tr>
+<tr>
+<td>application_type</td>
+<td>object</td>
+<td>INDIVIDUAL</td>
+<td>Indicates whether the loan is an individual application or a joint application with two co-borrowers</td>
+</tr>
+<tr>
+<td>acc_now_delinq</td>
+<td>float64</td>
+<td>0</td>
+<td>The number of accounts on which the borrower is now delinquent.</td>
+</tr>
+<tr>
+<td>chargeoff_within_12_mths</td>
+<td>float64</td>
+<td>0</td>
+<td>Number of charge-offs within 12 months</td>
+</tr>
+<tr>
+<td>delinq_amnt</td>
+<td>float64</td>
+<td>0</td>
+<td>The past-due amount owed for the accounts on which the borrower is now delinquent.</td>
+</tr>
+<tr>
+<td>pub_rec_bankruptcies</td>
+<td>float64</td>
+<td>0</td>
+<td>Number of public record bankruptcies</td>
+</tr>
+<tr>
+<td>tax_liens</td>
+<td>float64</td>
+<td>0</td>
+<td>Number of tax liens</td>
+</tr>
+</tbody></table>
+<p>In the last group of columns, we need to drop the following columns:<br>total_rec_int: leaks data from the future, (after the loan already started to be paid off),<br>total_rec_late_fee: also leaks data from the future, (after the loan already started to be paid off),<br>recoveries: also leaks data from the future, (after the loan already started to be paid off),<br>collection_recovery_fee: also leaks data from the future, (after the loan already started to be paid off),<br>last_pymnt_d: also leaks data from the future, (after the loan already started to be paid off),<br>last_pymnt_amnt: also leaks data from the future, (after the loan already started to be paid off).<br>All of these columns leak data from the future, meaning that they’re describing aspects of the loan after it’s already been fully funded and started to be paid off by the borrower.</p>
+<h2 id="1-9"><a href="#1-9" class="headerlink" title="1-9"></a>1-9</h2><p>Use the Dataframe method drop to remove the following columns from the loans_2007 Dataframe:<br>total_rec_int<br>total_rec_late_fee<br>recoveries<br>collection_recovery_fee<br>last_pymnt_d<br>last_pymnt_amnt<br>Use the print function to:<br>display the first row of loans_2007 and<br>the number of columns in loans_2007.</p>
+<h2 id="1-10"><a href="#1-10" class="headerlink" title="1-10"></a>1-10</h2><p>Just by becoming familiar with the columns in the dataset, we were able to reduce the number of columns from 52 to 32 columns. We now need to decide on a target column that we want to use for modeling.<br>We should use the loan_status column, since it’s the only column that directly describes if a loan was paid off on time, had delayed payments, or was defaulted on the borrower. Currently, this column contains text values and we need to convert it to a numerical one for training a model. Let’s explore the different values in this column and come up with a strategy for converting the values in this column.</p>
+<p>Use the Series method value_counts to return the frequency of the unique values in the loan_statuscolumn.<br>Display the frequency of each unique value using the print function.</p>
+<h2 id="1-11"><a href="#1-11" class="headerlink" title="1-11"></a>1-11</h2><p>There are 8 different possible values for the loan_status column. We can read about most of the different loan statuses on the Lending Clube webste. The two values that start with “Does not meet the credit policy” aren’t explained unfortunately. A quick Google search takes us to explanations from the lending community here.<br>We’ve compiled the explanation for each column as well as the counts in the Dataframe in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Loan Status</th>
+<th>Count</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fully Paid</td>
+<td>33136</td>
+<td>Loan has been fully paid off.</td>
+</tr>
+<tr>
+<td>Charged Off</td>
+<td>5634</td>
+<td>Loan for which there is no longer a reasonable expectation of further payments.</td>
+</tr>
+<tr>
+<td>Does not meet the credit policy. Status:Fully Paid</td>
+<td>1988</td>
+<td>While the loan was paid off, the loan application today would no longer meet the credit policy and wouldn’t be approved on to the marketplace.</td>
+</tr>
+<tr>
+<td>Does not meet the credit policy. Status:Charged Off</td>
+<td>761</td>
+<td>While the loan was charged off, the loan application today would no longer meet the credit policy and wouldn’t be approved on to the marketplace.</td>
+</tr>
+<tr>
+<td>In Grace Period</td>
+<td>20</td>
+<td>The loan is past due but still in the grace period of 15 days.</td>
+</tr>
+<tr>
+<td>Late (16-30 days)</td>
+<td>8</td>
+<td>Loan hasn’t been paid in 16 to 30 days (late on the current payment).</td>
+</tr>
+<tr>
+<td>Late (31-120 days)</td>
+<td>24</td>
+<td>Loan hasn’t been paid in 31 to 120 days (late on the current payment).</td>
+</tr>
+<tr>
+<td>Current</td>
+<td>961</td>
+<td>Loan is up to date on current payments.</td>
+</tr>
+<tr>
+<td>Default</td>
+<td>3</td>
+<td>Loan is defaulted on and no payment has been made for more than 121 days.</td>
+</tr>
+</tbody></table>
+<p>From the investor’s perspective, we’re interested in trying to predict which loans will be paid off on time and which ones won’t be. Only the Fully Paid and Charged Off values describe the final outcome of the loan. The other values describe loans that are still on going and where the jury is still out on if the borrower will pay back the loan on time or not. While the Default status resembles the Charged Off status, in Lending Club’s eyes, loans that are charged off have essentially no chance of being repaid while default ones have a small chance.<br>Since we’re interested in being able to predict which of these 2 values a loan will fall under, we can treat the problem as a binary classification one. Let’s remove all the loans that don’t contain either Fully Paid and Charged Off as the loan’s status and then transform the Fully Paid values to 1 for the positive case and the Charged Off values to 0 for the negative case. While there are a few different ways to transform all of the values in a column, we’ll use the Dataframe method replace. According to the documentation, we can pass the replace method a nested mapping dictionary in the following format:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mapping_dict = &#123;</span><br><span class="line">    <span class="string">"date"</span>: &#123;</span><br><span class="line">        <span class="string">"january"</span>: 1,</span><br><span class="line">        <span class="string">"february"</span>: 2,</span><br><span class="line">        <span class="string">"march"</span>: 3</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">df = df.replace(mapping_dict)</span><br></pre></td></tr></table></figure>
+<p>Lastly, one thing we need to keep in mind is the class imbalance between the positive and negative cases. While there are 33,136 loans that have been fully paid off, there are only 5,634 that were charged off. This class imbalance is a common problem in binary classification and during training, the model ends up having a strong bias towards predicting the class with more observations in the training set and will rarely predict the class with less observations. The stronger the imbalance, the more biased the model becomes. There are a few different ways to tackle this class imbalance, which we’ll explore later.</p>
+<h2 id="1-12"><a href="#1-12" class="headerlink" title="1-12"></a>1-12</h2><p>Remove all rows from loans_2007 that contain values other than Fully Paid or Charged Off for the loan_status column.<br>Use the Dataframe method replace to replace:<br>Fully Paid with 1<br>Charged Off with 0</p>
+<h2 id="1-13"><a href="#1-13" class="headerlink" title="1-13"></a>1-13</h2><p>To wrap up this mission, let’s look for any columns that contain only one unique value and remove them. These columns won’t be useful for the model since they don’t add any information to each loan application. In addition, removing these columns will reduce the number of columns we’ll need to explore further in the next mission.<br>We’ll need to compute the number of unique values in each column and drop the columns that contain only one unique value. While the Series method unique returns the unique values in a column, it also counts the Pandas missing value object nan as a value:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unique_values = loans[<span class="string">'tax_liens'</span>].unique()</span><br></pre></td></tr></table></figure>
+<p>Since we’re trying to find columns that contain one true unique value, we should first drop the null values then compute the number of unique values.</p>
+<h2 id="1-14"><a href="#1-14" class="headerlink" title="1-14"></a>1-14</h2><p>It looks we were able to remove 9 more columns since they only contained 1 unique value.<br>In this mission, we started to become familiar with the columns in the dataset and removed many columns that aren’t useful for modeling. We also selected our target column and decided to focus our modeling efforts on binary classification. In the next mission, we’ll explore the individual features in greater depth and work towards training our first machine learning model.</p>
+<h2 id="2-1"><a href="#2-1" class="headerlink" title="2-1"></a>2-1</h2><p>In the past mission, we removed all of the columns that contained redundant information, weren’t useful for modeling, required too much processing to make useful, or leaked information from the future. We’ve exported the Dataframe from the end of the last mission to a CSV file named filtered_loans_2007.csv to differentiate the file with the loans_2007.csv we used in the last mission. In this mission, we’ll prepare the data for machine learning by focusing on handling missing values, converting categorical columns to numeric columns, and removing any other extraneous columns we encounter throughout this process.<br>This is because the mathematics underlying most machine learning models assumes that the data is numerical and contains no missing values. To reinforce this requirement, scikit-learn will return an error if we try to train a model using data that contain missing values or non-numeric values when working with models like linear regression and logistic regression.<br>Let’s start by computing the number of missing values and come up with a strategy for handling them. Then, we’ll focus on the categorical columns.<br>We can return the number of missing values across the Dataframe by:<br>first using the Pandas Dataframe method isnull to return a Dataframe containing Boolean values:<br>True if the original value is null,<br>False if the original value isn’t null.<br>then using the Pandas Dataframe method sum to calculate the number of null values in each column.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">null_counts = df.isnull().sum()</span><br></pre></td></tr></table></figure>
+<p>Read in filtered_loans_2007.csv as a Dataframe and assign it to loans.<br>Use the isnull and sum methods to return the number of null values in each column. Assign the resulting Series object to null_counts.<br>Use the print function to display the rows of null_counts that are greater than zero.</p>
+<h2 id="2-2"><a href="#2-2" class="headerlink" title="2-2"></a>2-2</h2><p>We now got a series displaying how many missing values each column with missing values has:<br>emp_length              1036<br>title                     11<br>revol_util                50<br>last_credit_pull_d         2<br>pub_rec_bankruptcies     697<br>While most of the columns have no missing values, two columns have fifty or less rows with missing values, and two columns, emp_length and pub_rec_bankruptcies, contain a relatively high amount of missing values.<br>Domain knowledge tells us that employment length is frequently used in assessing how risky a potential borrower is, so we’ll keep this column despite its relatively large amount of missing values.<br>Let’s inspect the values of the column pub_rec_bankruptcies.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(loans.pub_rec_bankruptcies.value_counts(normalize=True, dropna=False))</span><br></pre></td></tr></table></figure>
+<p>0.0    0.939438<br> 1.0    0.042456<br>NaN     0.017978<br> 2.0    0.000129<br>Name: pub_rec_bankruptcies, dtype: float64</p>
+<p>We see that this column offers very little variability, nearly 94% of values are in the same category. It probably won’t have much predictive value. let’s drop it. In addition, we’ll remove the remaining rows containing null values.<br>This means that we’ll keep the following columns and just remove rows containing missing values for them:<br>emp_length<br>title<br>revol_util<br>last_credit_pull_d<br>and drop the pub_rec_bankruptcies column entirely.<br>Let’s use the strategy of removing the pub_rec_bankruptcies column first then removing all rows containing any missing values at all to cover both of these cases. This way, we only remove the rows containing missing values for the emp_length, title and revol_util columns, but not the pub_rec_bankruptcies column.<br>Use the drop method to remove the pub_rec_bankruptcies column from loans.<br>Use the dropna method to remove all rows from loanscontaining any missing values.<br>Use the dtypes attribute followed by the value_counts() method to return the counts for each column data type. Use the print function to display these counts.</p>
+<h2 id="2-3"><a href="#2-3" class="headerlink" title="2-3"></a>2-3</h2><p>While the numerical columns can be used natively with scikit-learn, the object columns that contain text need to be converted to numerical data types. Let’s return a new Dataframe containing just the object columns so we can explore them in more depth. We can use the Dataframe method select_dtypes to select only the columns of a certain data type:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float_df = df.select_dtypes(include=[<span class="string">'float'</span>])</span><br></pre></td></tr></table></figure>
+<p>Let’s select just the object columns then display a sample row to get a better sense of how the values in each column are formatted.<br>Use the Dataframe method select_dtypes to select only the columns of object type from loans and assign the resulting Dataframe object_columns_df.<br>Display the first row in object_columns_df using the print function.</p>
+<h2 id="2-4"><a href="#2-4" class="headerlink" title="2-4"></a>2-4</h2><p>Some of the columns seem like they represent categorical values, but we should confirm by checking the number of unique values in those columns:<br>home_ownership: home ownership status, can only be 1 of 4 categorical values according to the data dictionary,<br>verification_status: indicates if income was verified by Lending Club,<br>emp_length: number of years the borrower was employed upon time of application,<br>term: number of payments on the loan, either 36 or 60,<br>addr_state: borrower’s state of residence,<br>purpose: a category provided by the borrower for the loan request,<br>title: loan title provided the borrower,<br>There are also some columns that represent numeric values, that need to be converted:<br>int_rate: interest rate of the loan in %,<br>revol_util: revolving line utilization rate or the amount of credit the borrower is using relative to all available credit, read more here.<br>Based on the first row’s values for purpose and title, it seems like these columns could reflect the same information. Let’s explore the unique value counts separately to confirm if this is true.<br>Lastly, some of the columns contain date values that would require a good amount of feature engineering for them to be potentially useful:<br>earliest_cr_line: The month the borrower’s earliest reported credit line was opened,<br>last_credit_pull_d: The most recent month Lending Club pulled credit for this loan.<br>Since these date features require some feature engineering for modeling purposes, let’s remove these date columns from the Dataframe.</p>
+<h2 id="2-5"><a href="#2-5" class="headerlink" title="2-5"></a>2-5</h2><p>Let’s explore the unique value counts of the columnns that seem like they contain categorical values.<br>Display the unique value counts for the following columns: home_ownership, verification_status, emp_length, term, addr_state columns.<br>Store these column names in a list named cols.<br>Use a for loop to iterate over cols:<br>Use the print function combined with the Series method value_counts to display each column’s unique value counts.</p>
+<h2 id="2-6"><a href="#2-6" class="headerlink" title="2-6"></a>2-6</h2><p>The home_ownership, verification_status, emp_length, term, and addr_state columns all contain multiple discrete values. We should clean the emp_length column and treat it as a numerical one since the values have ordering (2 years of employment is less than 8 years).<br>First, let’s look at the unique value counts for the purpose and title columns to understand which column we want to keep.</p>
+<p>Use the value_counts method and the print function to display the unique values in the following columns:<br>title<br>purpose</p>
+<h2 id="2-7"><a href="#2-7" class="headerlink" title="2-7"></a>2-7</h2><p>The home_ownership, verification_status, emp_length, and term columns each contain a few discrete categorical values. We should encode these columns as dummy variables and keep them.<br>It seems like the purpose and title columns do contain overlapping information but we’ll keep the purpose column since it contains a few discrete values. In addition, the title column has data quality issues since many of the values are repeated with slight modifications (e.g. Debt Consolidation and Debt Consolidation Loan and debt consolidation).<br>We can use the following mapping to clean the emp_length column:<br>“10+ years”: 10<br>“9 years”: 9<br>“8 years”: 8<br>“7 years”: 7<br>“6 years”: 6<br>“5 years”: 5<br>“4 years”: 4<br>“3 years”: 3<br>“2 years”: 2<br>“1 year”: 1<br>“&lt; 1 year”: 0<br>“n/a”: 0<br>We erred on the side of being conservative with the 10+ years, &lt; 1 year and n/a mappings. We assume that people who may have been working more than 10 years have only really worked for 10 years. We also assume that people who’ve worked less than a year or if the information is not available that they’ve worked for 0. This is a general heuristic but it’s not perfect.<br>Lastly, the addr_state column contains many discrete values and we’d need to add 49 dummy variable columns to use it for classification. This would make our Dataframe much larger and could slow down how quickly the code runs. Let’s remove this column from consideration.<br>Remove the last_credit_pull_d, addr_state, title, and earliest_cr_line columns from loans.<br>Convert the int_rate and revol_util columns to float columns by:<br>Using the str acessor followed by the rstrip string method to strip the right trailing percent sign (%):<br>loans[‘int_rate’].str.rstrip(‘%’) returns a new Series with % stripped from the right side of each value.<br>On the resulting Series object, use the astypemethod to convert to the float type.<br>Assign the new Series of float values back to the respective columns in the Dataframe.<br>Use the replace method to clean the emp_lengthcolumn.</p>
+<h2 id="2-8"><a href="#2-8" class="headerlink" title="2-8"></a>2-8</h2><p>Let’s now encode the home_ownership, verification_status, purpose, and term columns as dummy variables so we can use them in our model. We first need to use the Pandas get_dummies method to return a new Dataframe containing a new column for each dummy variable.<br>Encode the home_ownership, verification_status, purpose, and term columns as integer values:<br>Use the get_dummies function to return a Dataframe containing the dummy columns.<br>Use the concat method to add these dummy columns back to loans.<br>Remove the original, non-dummy columns (home_ownership, verification_status, purpose, and term) from loans.</p>
+<h2 id="2-9"><a href="#2-9" class="headerlink" title="2-9"></a>2-9</h2><p>we performed the last amount of data preparation necessary to start training machine learning models. We converted all of the columns to numerical values because those are the only type of value scikit-learn can work with. In the next mission, we’ll experiment with training models and evaluating accuracy using cross-validation</p>
+<h2 id="3-1"><a href="#3-1" class="headerlink" title="3-1"></a>3-1</h2><p>We spent the last 2 missions cleaning and preparing a dataset that contains data on loans made to members of Lending Club. Our eventual goal is to generate features from the data, which can feed into a machine learning algorithm. The algorithm will make predictions about whether or not a loan will be paid off on time, which is contained in the loan_status column of the clean dataset.<br>As we prepared the data, we removed columns that had data leakage issues, contained redundant information, or required additional processing to turn into useful features. We cleaned features that had formatting issues and converted categorical columns to dummy variables.<br>In the last part, we noticed that there’s a class imbalance in our target column, loan_status. There are about 6 times as many loans that were paid off on time (positive case, label of 1) than those that weren’t (negative case, label of 0). Imbalances can cause issues with many machine learning algorithms, where they appear to have high accuracy, but actually aren’t learning from the training data. Because of its potential to cause issues, we need to keep the class imbalance in mind as we build machine learning models.<br>After all of our data cleaning in the past two missions, we ended up with the csv file called cleaned_loans_2007.csv. Let’s read this file into a Dataframe and view a summary of the work we did.<br>Read cleaned_loans_2007.csv into a Dataframe named loans.<br>Use the info() method and the print function to display a summary of the dataset.</p>
+<h2 id="3-2"><a href="#3-2" class="headerlink" title="3-2"></a>3-2</h2><p>Before we dive into predicting loan_status with machine learning, let’s go back to our first steps when we started cleaning the Lending Club dataset. You may recall the original question we wanted to answer:<br>Can we build a machine learning model that can accurately predict if a borrower will pay off their loan on time or not?<br>We established that this is a binary classification problem in the beginning, and we converted the loan_status column to 0s and 1s as a result. Before diving in and selecting an algorithm to apply to the data, we should select an error metric.<br>An error metric will help us figure out when our model is performing well, and when it’s performing poorly. To tie error metrics all the way back to the original question we wanted to answer, let’s say we’re using a machine learning model to predict whether or not we should fund a loan on the Lending Club platform. Our objective in this is to make money – we want to fund enough loans that are paid off on time to offset our losses from loans that aren’t paid off. An error metric will help us determine if our algorithm will make us money or lose us money.<br>In this case, we’re primarily concerned with false positives and false negatives. Both of these are different types of misclassifications. With a false positive, we predict that a loan will be paid off on time, but it actually isn’t. This costs us money, since we fund loans that lose us money. With a false negative, we predict that a loan won’t be paid off on time, but it actually would be paid off on time. This loses us potential money, since we didn’t fund a loan that actually would have been paid off.<br>In the loan_status and prediction columns, a 0 means that the loan wouldn’t be paid off on time, and a 1 means that it would.<br>Since we’re viewing this problem from the standpoint of a conservative investor, we need to treat false positives differently than false negatives. A conservative investor would want to minimize risk, and avoid false positives as much as possible. They’d be more okay with missing out on opportunities (false negatives) than they would be with funding a risky loan (false positives).<br>Let’s calculate false positives and true positives in Python. We can use multiple conditionals, separated by a &amp; to select items in a NumPy array that meet certain conditions. For instance, if we had an array called predictions, we could select items in predictions that equal 1 and where items in loans[“loan_status”] in the same position also equal 1 using this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">filter = (predictions == 1) &amp; (loans[<span class="string">"loan_status"</span>] == 1)</span><br><span class="line">predictions[tp_filter]</span><br></pre></td></tr></table></figure>
+<p>The above code will give us all the items in predictions that are true positives – where we predicted that the loan would be paid off on time, and it was actually paid off on time. By using the len function to find the number of items, we can find the number of true positives.<br>Using the diagram above as a reference, it’s possible to compute the other 3 quantities we mentioned – false positives, true negatives, and false negatives.<br>We’ve generated some predictions automatically, and they are stored in a NumPy array called predictions.</p>
+<h2 id="3-3"><a href="#3-3" class="headerlink" title="3-3"></a>3-3</h2><p>Find the number of true negatives.<br>Find the number of items where predictions is 0, and the corresponding entry in loans[“loan_status”] is also 0.<br>Assign the result to tn.<br>Find the number of true positives.<br>Find the number of items where predictions is 1, and the corresponding entry in loans[“loan_status”] is also 1.<br>Assign the result to tp.<br>Find the number of false negatives.<br>Find the number of items where predictions is 0, and the corresponding entry in loans[“loan_status”] is 1.<br>Assign the result to fn.<br>Find the number of false positives.<br>Find the number of items where predictions is 1, and the corresponding entry in loans[“loan_status”] is 0.<br>Assign the result to fp.</p>
+<h2 id="3-4"><a href="#3-4" class="headerlink" title="3-4"></a>3-4</h2><p>We mentioned earlier that there is a significant class imbalance in the loan_status column. There are 6 times as many loans that were paid off on time (1), than loans that weren’t paid off on time (0). This causes a major issue when we use accuracy as a metric. This is because due to the class imbalance, a classifier can predict 1 for every row, and still have high accuracy. Here’s a diagram that illustrates the concept:<br>loan_statuspredictionactual01111111111111<br>In the above diagram, our predictions are 85.7% accurate – we’ve correctly identified loan_status in 85.7% of cases. However, we’ve done this by predicting 1 for every row. What this means is that we’ll actually lose money. Let’s say we loan out 1000 dollars on average to each borrower. Each borrower pays us 10% interest back. So we make a projected profit of 100 dollars on each loan. In the above diagram, we’d actually lose money:<br>loan_statuspredictionprofit/lossactual01-1000111001110011100111001110011100<br>As you can see, we made 600 dollars in interest from the borrowers that paid us back, but we lost 1000 dollars on the one borrower who never paid us back, so we actually ended up losing 400 dollars overall, even though our model is technically accurate.<br>This is why it’s important to always be aware of imbalanced classes in machine learning models, and to adjust the error metric accordingly. In this case, we don’t want to use accuracy, and should instead use metrics that tell us the number of false positives and false negatives.<br>This means that we should optimize for:<br>high recall (true positive rate)<br>low fall-out (false positive rate)<br>We can calculate false positive rate and true positive rate, using the numbers of true positives, true negatives, false negatives, and false positives.<br>False positive rate is the number of false positives divided by the number of false positives plus the number of true negatives. This divides all the cases where we thought a loan would be paid off but it wasn’t by all the loans that weren’t paid off:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fpr = fp / (fp + tn)</span><br></pre></td></tr></table></figure>
+<p>True positive rate is the number of true positives divided by the number of true positives plus the number of false negatives. This divides all the cases where we thought a loan would be paid off and it was by all the loans that were paid off:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tpr = tp / (tp + fn)</span><br></pre></td></tr></table></figure>
+<p>We can write these out as mathematical formulas as well:<br>FPR=False PositivesFalse Positives+True Negatives<br>TPR=True PositivesTrue Positives+False Negatives<br>Simple english ways to think of each term are:<br>False Positive Rate: “the percentage of the loans that shouldn’t be funded that I would fund”.<br>True Positive Rate: “the percentage of loans that should be funded that I would fund”.<br>Generally, if we want to reduce false positive rate, true positive rate will also go down. This is because if we want to reduce the risk of false positives, we wouldn’t think about funding riskier loans in the first place.</p>
+<h2 id="3-5"><a href="#3-5" class="headerlink" title="3-5"></a>3-5</h2><p>Compute the false positive rate for predictions.<br>Compute the number of false positives, then dived by the number of false positives plus the number of true negatives.<br>Assign to fpr.<br>Compute the true positive rate for predictions.<br>Compute the number of true positives, then dived by the number of true positives plus the number of false negatives.<br>Assign to tpr.<br>Print out fpr and tpr to verify.</p>
+<h2 id="3-6"><a href="#3-6" class="headerlink" title="3-6"></a>3-6</h2><p>You may have noticed that both fprand tpr were 1. This is because we predicted 1 for each row. This means that we correctly identified all of the good loans (true positive rate), but we also incorrectly identified all of the bad loans (false positive rate). Now that we’ve setup error metrics, we can move on to making predictions using a machine learning algorithm.<br>As we saw, our cleaned dataset contains 41 columns, all of which are either the int64 or the float64 data type. There aren’t any null values in any of the columns. This means that we can now apply any machine learning algorithm to our dataset. Most algorithms can’t deal with non-numeric or missing values, which is why we had to do so much data cleaning.<br>In order to fit the machine learning models, we’ll use the Scikit-learn library. Although we’ve built our own implementations of algorithms in earlier missions, it’s easier and faster to use algorithms that someone else has already written and tuned for high performance.<br>A good first algorithm to apply to binary classification problems is logistic regression, for the following reasons:<br>it’s quick to train and we can iterate more quickly,<br>it’s less prone to overfitting than more complex models like decision trees,<br>it’s easy to interpret.<br>Create a Dataframe named features that contains just the feature columns.<br>Remove the loan_status column.<br>Create a Series named target that contains just the target column (loan_status).<br>Use the fit method of lr to fit a logistic regression to features and target.<br>Use the predict method of lr to make predictions on features. Assign the predictions to predictions.</p>
+<h2 id="3-7"><a href="#3-7" class="headerlink" title="3-7"></a>3-7</h2><p>While we generated predictions, those predictions were overfit. They were overfit because we generated predictions using the same data that we trained our model on. When we use this to evaluate error, we get an unrealistically high depiction of how accurate the algorithm is, because it already “knows” the correct answers. This is like asking someone to memorize a bunch of physics equations, then asking them to plug numbers into the equations. They can tell us the right answer, but they can’t explain a concept that they haven’t already memorized an equation for.<br>In order to get a realistic depiction of the accuracy of the model, let’s perform k-fold cross validation. We can use the cross_val_predict() function from the sklearn.model_selection package.<br>Once we have cross validated predictions, we can compute true positive rate and false positive rate.<br>Generate cross validated predictions for features.<br>Call cross_val_predict using lr, features, and target.<br>Set the kf parameter to 3, so that 3-fold cross validation is performed.<br>Assign the predictions to predictions.<br>Use the Series class to convert predictions to a pandas Series object.<br>Compute true positive rate and false positive rate.<br>Assign true positive rate to tpr.<br>Assign false positive rate to fpr.<br>Display fpr and tpr to evaluate them.</p>
+<h2 id="3-8"><a href="#3-8" class="headerlink" title="3-8"></a>3-8</h2><p>Our fpr and tpr are around what we’d expect if the model was predicting all ones. We can look at the first few rows of predictions to confirm:<br>0    1<br>1    1<br>2    1<br>3    1<br>4    1<br>5    1<br>6    1<br>7    1<br>8    1<br>9    1<br>Unfortunately, even through we’re not using accuracy as an error metric, the classifier is, and it isn’t accounting for the imbalance in the classes. There are a few ways to get a classifier to correct for imbalanced classes. The two main ways are:<br>Use oversampling and undersampling to ensure that the classifier gets input that has a balanced number of each class.<br>Tell the classifier to penalize misclassifications of the less prevalent class more than the other class.<br>We’ll look into oversampling and undersampling first. They involve taking a sample that contains equal numbers of rows where loan_status is 0, and where loan_status is 1. This way, the classifier is forced to make actual predictions, since predicting all 1s or all 0s will only result in 50% accuracy at most.<br>The downside of this technique is that since it has to preserve an equal ratio, we have to either:<br>Throw out many rows of data. If we wanted equal numbers of rows where loan_status is 0 and where loan_status is 1, one way we could do that is to delete rows where loan_status is 1.<br>Copy rows multiple times. One way to equalize the 0s and 1s is to copy rows where loan_status is 0.<br>Generate fake data. One way to equalize the 0s and 1s is to generate new rows where loan_status is 0.<br>Unfortunately, none of these techniques are especially easy. The second method we mentioned earlier, telling the classifier to penalize certain rows more, is actually much easier to implement using scikit-learn.<br>We can do this by setting the class_weight parameter to balanced when creating the LogisticRegression instance. This tells scikit-learn to penalize the misclassification of the minority class during the training process. The penalty means that the logistic regression classifier pays more attention to correctly classifying rows where loan_status is 0. This lowers accuracy when loan_status is 1, but raises accuracy when loan_status is 0.<br>By setting the class_weight parameter to balanced, the penalty is set to be inversely proportional to the class frequencies. This would mean that for the classifier, correctly classifying a row where loan_status is 0 is 6 times more important than correctly classifying a row where loan_status is 1.<br>We can repeat the cross validation procedure we performed, but with the class_weight parameter set to balanced.</p>
+<h2 id="3-9"><a href="#3-9" class="headerlink" title="3-9"></a>3-9</h2><p>Create a LogisticRegression instance.<br>Remember to set class_weight to balanced.<br>Assign the instance to lr.<br>Generate cross validated predictions for features.<br>Call cross_val_predict() using lr, features, and target.<br>Assign the predictions to predictions.<br>Use the Series class to convert predictions to a Pandas Series.<br>Converting to Series objects letse us take advantage of boolean filtering and arithmetic operations from pandas.<br>Compute true positive rate and false positive rate.<br>Assign true positive rate to tpr.<br>Assign false positive rate to fpr.<br>Print out fpr and tpr to evaluate them.</p>
+<h2 id="3-10"><a href="#3-10" class="headerlink" title="3-10"></a>3-10</h2><p>We significantly improved false positive rate by balancing the classes, which reduced true positive rate. Our true positive rate is now around 67%, and our false positive rate is around 40%. From a conservative investor’s standpoint, it’s reassuring that the false positive rate is lower because it means that we’ll be able to do a better job at avoiding bad loans than if we funded everything. However, we’d only ever decide to fund 67% of the total loans (true positive rate), so we’d immediately reject a good amount of loans.<br>We can try to lower the false positive rate further by assigning a harsher penalty for misclassifying the negative class. While setting class_weight to balanced will automatically set a penalty based on the number of 1sand 0s in the column, we can also set a manual penalty. The penalty scikit-learn imposed for misclassifying a 0 would have been around 5.89 (since there are 5.89 times as many 1s as 0s).<br>We can also specify a penalty manually if we want to adjust the rates more. To do this, we need to pass in a dictionary of penalty values to the class_weight parameter.<br>Modify the code to change the class_weight parameter from the string “balanced”to the dictionary:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">penalty = &#123;     0: 10,     1: 1 &#125;</span><br></pre></td></tr></table></figure>
+<p>Remember to print out the fpr and tpr values at the end!</p>
+<h2 id="3-11"><a href="#3-11" class="headerlink" title="3-11"></a>3-11</h2><p>It looks like assigning manual penalties lowered the false positive rate to 7%, and thus lowered our risk. Note that this comes at the expense of true positive rate. While we have fewer false positives, we’re also missing opportunities to fund more loans and potentially make more money. Given that we’re approaching this as a conservative investor, this strategy makes sense, but it’s worth keeping in mind the tradeoffs.<br>While we could tweak the penalties further, it’s best to move to trying a different model right now, for larger potential false positive rate gains. We can always loop back and iterate on the penalties more later.<br>Let’s try a more complex algorithm, random forest. We learned about random forests in a previous mission, and constructed our own model. Random forests are able to work with nonlinear data, and learn complex conditionals. Logistic regressions are only able to work with linear data. Training a random forest algorithm may enable us to get more accuracy due to columns that correlate nonlinearly with loan_status.</p>
+<p>We can use the RandomForestClassifer class from scikit-learn to do this.<br>Modify the code, and swap out the LogisticRegression for a RandomForestClassifer model.<br>Set the value of the keyword argument random_stateto 1, so the predictions don’t vary due to random chance.<br>Set the value of the keyword argument class_weightto balanced, so we avoid issues with imbalanced classes.<br>Remember to print out the fpr and tpr values at the end!</p>
+<h2 id="3-12"><a href="#3-12" class="headerlink" title="3-12"></a>3-12</h2><p>Unfortunately, using a random forest classifier didn’t improve our false positive rate. The model is likely weighting too heavily on the 1 class, and still mostly predicting 1s. We could fix this by applying a harsher penalty for misclassifications of 0s.<br>Ultimately, our best model had a false positive rate of 7%, and a true positive rate of 20%. For a conservative investor, this means that they make money as long as the interest rate is high enough to offset the losses from 7% of borrowers defaulting, and that the pool of 20% of borrowers is large enough to make enough interest money to offset the losses.<br>If we had randomly picked loans to fund, borrowers would have defaulted on 14.5% of them, and our model is better than that, although we’re excluding more loans than a random strategy would. Given this, there’s still quite a bit of room to improve:<br>We can tweak the penalties further.<br>We can try models other than a random forest and logistic regression.<br>We can use some of the columns we discarded to generate better features.<br>We can ensemble multiple models to get more accurate predictions.<br>We can tune the parameters of the algorithm to achieve higher performance.</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Ian Xu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2019/12/17/Project-Summary/">http://yoursite.com/2019/12/17/Project-Summary/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2019/12/17/Coding-Demonstration/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Previous Post</div><div class="prev_info"><span>Coding Demonstration</span></div></a></div><div class="next-post pull_right"><a href="/2019/12/17/About-Me/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>About Me</span></div></a></div></nav></div></div><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2019 By Ian Xu</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
